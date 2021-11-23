@@ -6,7 +6,7 @@
 :root{
     /*Primary Colors*/
     --pale-blue: hsl(225, 100%, 94%);
-    --bright-blue: hsl(245, 75%, 52%)
+    --bright-blue: hsl(245, 75%, 52%);
     /*Neutral Colors*/
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
@@ -14,4 +14,86 @@
 }
 html{
     font-size: 62.5%;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    height: auto;
+    width: 75%;
+    max-width: 500px;
+    border: 1px solid var(--very-pale-blue);
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+main h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+main > p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 90%;
+    color: gray;
+}
+main figure{
+    width: 100%;
+}
+main figure img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 80%;
+}
+.description__price p:nth-child(1){
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.description__price p:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: gray;
+}
+.description a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn_success{
+    background-color: var(--bright-blue);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    width: 85%;
+}
+.btn_cancel{
+    background-color: var(--very-pale-blue);
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 85%;
 }
