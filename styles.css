@@ -73,8 +73,12 @@ main figure img{
 }
 .description a{
     font-size: 1.4rem;
-    text-decoration: none;
     font-weight: 500;
+    color: var(--dark-blue)
+}
+.description a:hover{
+    text-decoration: none;
+    opacity: 0.8;
 }
 .btn_success{
     background-color: var(--bright-blue);
@@ -87,6 +91,9 @@ main figure img{
     margin-bottom: 10px;
     width: 85%;
 }
+.btn_success:hover{
+    background-color: var(--desaturated-blue)
+}
 .btn_cancel{
     background-color: var(--very-pale-blue);
     padding: 10px 5px;
@@ -96,4 +103,7 @@ main figure img{
     border-radius: 10px;
     margin-bottom: 20px;
     width: 85%;
+}
+.btn_cancel:hover{
+    font-weight: 900;
 }
